@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: poppins;
+    box-sizing: border-box;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+.topbar{
+    width: 100%;
+    height: 5vh;
+    background-color: rgb(223, 223, 223);
+    display: flex;
+    flex-direction: row-reverse;
+    line-height: 5vh;
+    box-shadow: 0px 3px 8px -5px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 3px 8px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 3px 8px -5px rgba(0,0,0,0.75);
+}
+.topbar .content a{
+    color: rgb(134, 128, 128);
+    padding-left: 25px;
+}
+/* END OF TOP BAR */
+
+/* START OF 2ND BAR */
+.secondbar{
+    height: 10vh;
+    line-height: 10vh;
+    width: 100%;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 3px 8px -5px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px 3px 8px -5px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 3px 8px -5px rgba(0,0,0,0.75);
+}
+.secondbar .container{
+    padding-left: 40px;
+    padding-right: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+/* LOGO */
+.logo{
+    font-family: Mochiy Pop One;
+    color: rgb(0, 40, 126);
+    font-weight: bold;
+}
+/* nav */
+
+nav ul {
+    display: flex;
+}
+nav ul li{
+    padding-left: 20px;
+}
+
+/* chat start */
+.chat{
+    width: 280px;
+    height: 35px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color: goldenrod;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+}
+.prac{
+    height: 90vh;
+}
+/* Social Links Start */
+.sociallinks{
+    width: 40px;
+    height: 250px;
+    background-color: rgb(255, 0, 0);
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    border-top-right-radius: 30px;
+}
+/* Social Links End */
+
+/* HERO START */
+.hero{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: white;
+}
+.hero .content{
+    padding-right: 20px;
+    padding-left: 40px;
+}
+
+/* HERO END */
+
+/* ABOUT START */
+.about{
+    height: 100vh;
+    width: 100%;
+}
+.about .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* ABOUT END */
+
+/* services start */
+.services{
+    height: 100vh;
+    width: 100%;
+}
+.services .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* services end */
+
+
+/* Footer Start */
+
+/* Footer End */
+
+
+@media(max-width: 768px){
+    .topbar{
+        width: 100%;
+        height: 3vh;
+        line-height: 3vh;
+    }
+    nav{
+        display: none;
+    }
+    .hero{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+    }
+    .hero .content{
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    .hero img{
+        overflow: hidden;
+        width: 100%;
+    }
+    .about{
+        background-color: white;
+    }
+    .services{
+        background-color: white;
+    }
+}
